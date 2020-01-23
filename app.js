@@ -43,9 +43,10 @@ document.addEventListener('DOMContentLoaded', () => {
     World.add(world, stack);
 
     World.add(world, [
+        Bodies.rectangle(380, 0, 700, 5, { isStatic: true, angle: -Math.PI * 0.04, render: { visible: true} }),
         Bodies.rectangle(250, 150, 700, 5, { isStatic: true, angle: Math.PI * 0.06, render: { visible: true} }),
         Bodies.rectangle(500, 380, 700, 10, { isStatic: true, angle: -Math.PI * 0.08, render: { visible: true} }),
-        // Bodies.rectangle(340, 580, 700, 10, { isStatic: true, angle: Math.PI * 0.05, render: { visible: true} })
+        Bodies.rectangle(340, 580, 700, 10, { isStatic: true, angle: Math.PI * 0.05, render: { visible: true} })
 
     ]);
 
@@ -55,14 +56,14 @@ document.addEventListener('DOMContentLoaded', () => {
 
      // add bodies
     World.add(world, [
-        Bodies.rectangle(400, 775, 1200, 10.5, { isStatic: true})
+        Bodies.rectangle(400, 775, 1750, 10.5, { isStatic: true})
     ]);
 
     World.add(world, [
-        Bodies.rectangle(-250, 250, 10.5, 1000, { isStatic: true})
+        Bodies.rectangle(-500, 250, 10.5, 1000, { isStatic: true})
     ]);
     World.add(world, [
-        Bodies.rectangle(1050, 250, 10.5, 1000, { isStatic: true})
+        Bodies.rectangle(1250, 250, 10.5, 1000, { isStatic: true})
     ]);
 
     var stack = Composites.stack(100, 0, 10, 8, 10, 10, function(x, y) {

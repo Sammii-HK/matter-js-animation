@@ -56,14 +56,14 @@ document.addEventListener('DOMContentLoaded', () => {
 
      // add bodies
     World.add(world, [
-        Bodies.rectangle(400, 775, 1750, 10.5, { isStatic: true})
+        Bodies.rectangle(375, 765, 1750, 10.5, { isStatic: true})
     ]);
 
     World.add(world, [
-        Bodies.rectangle(-500, 250, 10.5, 1000, { isStatic: true})
+        Bodies.rectangle(-500, 350, 10.5, 800, { isStatic: true})
     ]);
     World.add(world, [
-        Bodies.rectangle(1250, 250, 10.5, 1000, { isStatic: true})
+        Bodies.rectangle(1250, 350, 10.5, 800, { isStatic: true})
     ]);
 
     var stack = Composites.stack(100, 0, 10, 8, 10, 10, function(x, y) {
